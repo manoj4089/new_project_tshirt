@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { easing } from 'maath';
 import { useSnapshot } from 'valtio';
 import { useFrame } from '@react-three/fiber';
@@ -26,7 +26,7 @@ const Shirt = () => {
         material-roughness={1}
         dispose={null}
       >
-        {fullTexture.isValid && snap.isFullTexture && (
+        {snap.isFullTexture && (
           <Decal 
             position={[0, 0, 0]}
             rotation={[0, 0, 0]}
@@ -35,7 +35,7 @@ const Shirt = () => {
           />
         )}
 
-        { snap.isLogoTexture && (
+        {snap.isLogoTexture && (
           <Decal 
             position={[0, 0.04, 0.15]}
             rotation={[0, 0, 0]}
@@ -48,7 +48,7 @@ const Shirt = () => {
         )}
       </mesh>
     </group>
-  );
-};
+  )
+}
 
-export default Shirt;
+export default Shirt
